@@ -83,8 +83,7 @@ CREATE TABLE IF NOT EXISTS warehouse.fact_sales (
 );
 
 -- ---------------------------------------------------------------- data quality log
--- Bad rows go here, never into the warehouse. Show this table in interview:
--- it proves you check data instead of silently loading it.
+-- Bad rows go here, never into the warehouse.
 CREATE TABLE IF NOT EXISTS warehouse.dq_log (
     log_id       SERIAL PRIMARY KEY,
     order_id     TEXT,

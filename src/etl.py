@@ -1,6 +1,6 @@
 """Retail Sales ETL: CSV -> staging -> warehouse (star schema, SCD Type 2).
 
-Flow (matches the CV and sql/schema.sql):
+Flow (see sql/schema.sql):
   1. Extract: read a CSV into staging_sales_raw exactly as-is (all text).
   2. Transform + data-quality checks in pandas: duplicate order_id,
      missing price, invalid date, bad quantity go to dq_log and NEVER
@@ -68,7 +68,7 @@ def upsert_scd2(conn, table, key_col, natural_key, natural_value, attrs, effecti
 
     New member -> insert. Tracked attribute changed -> close the current
     row (effective_to + is_current=0) and open a new one. Unchanged ->
-    reuse the current row. This is SCD Type 2, exactly as the CV claims.
+    reuse the current row. This is SCD Type 2.
     """
     cur = conn.cursor()
     cur.execute(
