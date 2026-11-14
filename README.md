@@ -1,7 +1,4 @@
-# Retail Sales Data Warehouse & ETL Pipeline — Starter
-
-**For:** Muhammad Talha Zahid (Mughal) — the project listed as "(in progress)" on the TenX Data Engineer CV (final CV PDF, 13 Nov 2026, 14:05 UTC).
-**Status:** starter, built 13 Nov 2026. Not a finished project — finish it by running the steps below, then you can defend it in interview.
+# Retail Sales Data Warehouse & ETL Pipeline
 
 ## What this is
 
