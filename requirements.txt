@@ -1,2 +1,7 @@
+# ETL runtime (src/etl.py uses only pandas + the standard library)
 pandas
+# Screenshots only (src/make_screenshots.py) — not needed to run the ETL
+matplotlib
+# PostgreSQL only — needed by the planned PostgreSQL loader in src/etl.py,
+# which is not implemented yet; not needed for the SQLite demo mode
 psycopg2-binary
